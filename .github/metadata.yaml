@@ -1,0 +1,10 @@
+description: "Swift implementation of RFC 6454: The Web Origin Concept."
+topics:
+  - standards
+  - rfc
+  - rfc-6454
+  - http
+  - origin
+homepage: "https://swift-institute.org"
+readme:
+  family: E
