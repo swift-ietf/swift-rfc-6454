@@ -18,6 +18,7 @@ let package = Package(
         )
     ],
     dependencies: [
+        .package(url: "https://github.com/swift-ietf/swift-rfc.git", branch: "main"),
         .package(url: "https://github.com/swift-ietf/swift-rfc-3986.git", branch: "main"),
         .package(url: "https://github.com/swift-ietf/swift-rfc-9110.git", branch: "main"),
     ],
@@ -25,6 +26,7 @@ let package = Package(
         .target(
             name: "RFC 6454",
             dependencies: [
+                .product(name: "IETF RFC", package: "swift-rfc"),
                 .product(name: "RFC 3986", package: "swift-rfc-3986"),
                 .product(name: "RFC 9110", package: "swift-rfc-9110"),
             ]
